@@ -1,0 +1,29 @@
+
+path{
+    stroke-dasharray: 10; stroke-dashoffset: 3000; animation: dash 50s linear forwards; animation-iteration-count: 1; animation-delay: 1s;
+}
+@keyframes dash {
+
+ 
+ to{
+     
+     stroke-dashoffset: 600;
+     
+     
+ }
+}
+
+@keyframes lightline{
+
+ 0%{
+     stroke: black;
+ }
+
+ 50%{
+     stroke: red;
+ }
+
+ 100%{
+     stroke: black;
+ }
+}

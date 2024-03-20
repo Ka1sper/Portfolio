@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html class="bg-white dark:bg-neutral-900">
+  <head>
+    <title>Передвижники</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-0 left-0 w-full sticky z-30">
+      <nav class="bg-white border-gray-200 dark:bg-neutral-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-neutral-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="./index.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  aria-current="page"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./map.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Карта</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./wanderers.html"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  >Передвижники</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./gallery.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Галерея</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-white dark:bg-neutral-900">
+      <section
+        class="max-w-screen-xl mx-auto p-4 dark:text-white grid lg:grid-cols-4 gap-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1"
+      >
+        <!-- 1 -->
+        <div class="flex flex-col gap-4">
+          <!-- Ниже див с каруселью -->
+          <div
+            id="controls-carousel"
+            class="relative w-full"
+            data-carousel="static"
+          >
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="./img/picters/SurikovMenshikovBerezovo.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 2 -->
+              <div
+                class="hidden duration-700 ease-in-out"
+                data-carousel-item="active"
+              >
+                <img
+                  src="./img/wanderers/1.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <!-- Slider controls -->
+            <button
+              type="button"
+              class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6 text-white dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6 text-white dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+
+          <h1 class="text-xl">Василий Суриков</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Художник Василий Суриков с ранних лет мечтал писать исторические
+            сюжеты. Окончив обучение и выполнив свою первую и единственную
+            заказную работу, Суриков «стал на свой путь» — его кисти принадлежат
+            самые знаменитые исторические полотна.
+          </p>
+        </div>
+        <!-- 2 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Михаил Нестеров1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/2.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Михаил Нестеров</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Михаил Нестеров прославился картиной «Видение отроку Варфоломею»:
+            она стала сенсацией на XVIII выставке передвижников, для своей
+            галереи ее приобрел Павел Третьяков. Сам Нестеров считал полотно
+            лучшей своей работой, а позже написал цикл картин, посвященных
+            Сергию Радонежскому. Михаил Нестеров создал и уникальный тип
+            пейзажа, который прозвали нестеровским.
+          </p>
+        </div>
+        <!-- 3 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Валентин Серов1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/3.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Валентин Серов</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Валентин Серов писал портреты и пейзажи, рисовал иллюстрации и
+            выпускал журнал «Мир искусства», преподавал живопись и состоял в
+            совете Третьяковской галереи. «Девочка с персиками», полотна с
+            членами императорской семьи, афиша с Анной Павловой и портрет
+            обнаженной Иды Рубинштейн — вспоминаем творчество известного
+            русского художника.
+          </p>
+        </div>
+        <!-- 4 -->
+        <div class="flex flex-col gap-4">
+          <!-- Ниже див с каруселью -->
+          <div
+            id="controls-carousel"
+            class="relative w-full"
+            data-carousel="static"
+          >
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="./img/picters/Леонид Пастернак1.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 2 -->
+              <div
+                class="hidden duration-700 ease-in-out"
+                data-carousel-item="active"
+              >
+                <img
+                  src="./img/wanderers/4.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <!-- Slider controls -->
+            <button
+              type="button"
+              class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6 text-white dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6 text-white dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+          <h1 class="text-xl">Леонид Пастернак</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Первые работы на заказ Леонид Пастернак написал в шесть лет, а
+            своего заказчика — местного дворника — художник всю жизнь называл
+            «мой Лоренцо Медичи». Позже в творческой биографии Пастернака
+            появились портреты родственников и знаменитых современников, полотна
+            и рисунки со Львом Толстым, а также иллюстрации к его произведениям.
+            Работы художника хранятся в российских и зарубежных музеях и частных
+            собраниях.
+          </p>
+        </div>
+        <!-- 5 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Архип Куинджи1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/5.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Архип Куинджи</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Слава пришла к Архипу Куинджи не сразу: Айвазовский не брал его в
+            ученики, Академия художеств не принимала даже в вольнослушатели.
+            Однако он стал одним из самых известных художников эпохи, его
+            полотна покупали коллекционеры и члены императорской семьи, а на
+            выставках выстраивались очереди.
+          </p>
+        </div>
+        <!-- 6 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Илья Репин1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/6.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Илья Репин</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Илья Репин увлекся рисованием в раннем детстве, он учился на
+            топографа и был подмастерьем у иконописцев. В Академию художеств
+            Репин поступил лишь со второго раза, но потом вернулся туда уже
+            преподавать. А картины ему заказывали известные петербургские
+            аристократы и даже император Александр III.
+          </p>
+        </div>
+        <!-- 7 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Виктор Васнецов1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/7.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Виктор Васнецов</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Виктор Васнецов был известным мастером бытовой и исторической
+            живописи — его картины приобретали коллекционеры Павел Третьяков и
+            Савва Мамонтов. Полотно Васнецова «Богатыри» стало одним из первых
+            обращений к былинному сюжету в истории русской живописи. Кроме
+            написания картин Васнецов делал иллюстрации к книгам, создавал
+            эскизы архитектурных сооружений и расписывал храмы в разных городах
+            России.
+          </p>
+        </div>
+        <!-- 8 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Константин Коровин1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/8.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Константин Коровин</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Константин Коровин уже в 1880-х годах увлекся новым для России
+            живописным течением, и его работу «Портрет хористки» называли
+            «первой ласточкой русского импрессионизма». Кроме импрессионистских
+            пейзажей и натюрмортов художник создавал театральные декорации и
+            оформлял павильоны для всероссийской и международной выставок, а
+            также писал рассказы и мемуарные очерки.
+          </p>
+        </div>
+        <!-- 9 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Василий Перов1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/9.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Василий Перов</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Василия Перова один из его учеников называл «подлинным певцом
+            скорби». И не зря: постоянными персонажами его жанровых картин были
+            измученные крестьяне, голодные, замерзшие или оплакивающие умерших
+            родственников. Однако кисти Перова принадлежат не только социальные
+            работы, но и целая портретная галерея, а также картины на
+            исторические сюжеты.
+          </p>
+        </div>
+        <!-- 10 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Иван Шишкин1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/10.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Иван Шишкин</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Лесной богатырь-художник», «царь леса» — так называли Ивана Шишкина
+            современники. Он много путешествовал по России, воспевая
+            величественную красоту ее природы в своих картинах, которые сегодня
+            известны каждому.
+          </p>
+        </div>
+        <!-- 11 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Исаак Левитан1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/11.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Исаак Левитан</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Исаак Левитан не получил законченного художественного образования,
+            однако его картины пополняли коллекцию Павла Третьякова, появлялись
+            в экспозициях передвижников и на Всемирной выставке в Париже. В 38
+            лет живописец получил звание академика пейзажной живописи и стал
+            преподавать в Училище живописи, ваяния и зодчества, которое когда-то
+            не окончил сам.
+          </p>
+        </div>
+        <!-- 12 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Николай Ге1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/12.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Николай Ге</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            О главной картине Николая Ге «Тайная вечеря» Илья Репин говорил: «Во
+            всей Европе за все периоды христианского искусства не было равной
+            этой картине на эту тему». Но путь к виртуозному мастерству Ге не
+            был прост: долгие годы художник учился на математика, а потом пошел
+            против воли отца и поступил в Академию художеств.
+          </p>
+        </div>
+        <!-- 13 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Алексей Саврасов1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/13.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Алексей Саврасов</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Алексей Саврасов увлекался живописью с детства. Уже в 19-летнем
+            возрасте он был художником, которого знали в кругах петербургской
+            интеллигенции и даже называли «надеждой русского искусства».
+            Художник создал особый жанр русского пейзажа: он писал обыденные для
+            средней полосы России виды, наполняя их особой тонкой лирикой. Позже
+            Саврасов преподавал в Московском училище живописи и ваяния и
+            воспитал целое поколение именитых отечественных художников.
+          </p>
+        </div>
+        <!-- 14 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Игорь Грабарь1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/14.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Игорь Грабарь</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Игорь Грабарь писал наполненные светом пейзажи и натюрморты, был
+            архитектором и искусствоведом. Именно он провел перепланировку
+            Третьяковской галереи и составил ее первый научный каталог. Грабарь
+            также организовывал выставки советских художников за рубежом и вел
+            работы по сохранению древних икон и фресок.
+          </p>
+        </div>
+        <!-- 15 -->
+        <div class="flex flex-col gap-4">
+          <!-- Ниже див с каруселью -->
+          <div
+            id="controls-carousel"
+            class="relative w-full"
+            data-carousel="static"
+          >
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="./img/picters/Михаил Врубель1.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 2 -->
+              <div
+                class="hidden duration-700 ease-in-out"
+                data-carousel-item="active"
+              >
+                <img
+                  src="./img/wanderers/15.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <!-- Slider controls -->
+            <button
+              type="button"
+              class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6 text-white dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6 text-white dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+          <h1 class="text-xl">Михаил Врубель</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Михаил Врубель увлекся рисованием еще в детстве. По настоянию отца
+            он должен был стать юристом, однако позже оставил это поприще, чтобы
+            поступить в Академию художеств. Михаил Врубель писал иконы и фрески,
+            работал с мозаикой и рисовал эскизы театральных костюмов, создавал
+            декорации и огромные живописные полотна. Он стал автором
+            «демонического цикла» — серии работ из картин, иллюстраций и
+            скульптуры с главным героем Демоном.
+          </p>
+        </div>
+        <!-- 16 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Василий Верещагин1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/16.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Василий Верещагин</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Василий Верещагин еще при жизни стал известен как художник батальных
+            сцен. Однако его «непатриотичные», как их называли, работы
+            демонстрировали зрителям не триумф побед, а изнанку сражений — с
+            погибшими, ранеными, измученными солдатами. Художник ходил не только
+            в военные походы, но и путешествовал по всему миру, привозя эскизы
+            для будущих полотен — экспрессивных, красочных и детальных.
+            Коллекционер Павел Третьяков скупал работы Верещагина целыми сериями
+            вместе с резными авторскими рамами, которые создавались по эскизам
+            живописца.
+          </p>
+        </div>
+        <!-- 17 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Орест Кипренский1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/17.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Орест Кипренский</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Орест Кипренский получил признание в Европе одним из первых русских
+            художников: Флорентийская академия предложила ему написать
+            автопортрет для знаменитой галереи Уффици. Живописец был любимцем
+            русской аристократии начала XIX века: портрет Александра Пушкина
+            кисти Кипренского сохранил облик поэта на века. Но карьера художника
+            пошла на спад по вине загадочного и трагического случая, а умер он
+            вдали от родины.
+          </p>
+        </div>
+        <!-- 18 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Константин Маковский1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/18.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Константин Маковский</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Константин Маковский был одним из самых популярных российских
+            художников в конце XIX века. Портреты у него заказывали члены
+            императорской семьи и петербургские дворяне. Картины Маковского
+            участвовали в выставках Товарищества передвижников, Петербургского
+            общества художников, а самого живописца в прессе называли
+            «вдохновенным певцом эпохи».
+          </p>
+        </div>
+        <!-- 19 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Владимир Маковский1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/19.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Владимир Маковский</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Вместе со своими братьями и сестрами Владимир Маковский с детства
+            учился рисовать и мечтал стать художником. Он закончил Московское
+            училище живописи, ваяния и зодчества и стал одним из основателей и
+            членов правления Товарищества передвижных выставок. Маковский
+            прославился благодаря своим жанровым сценкам, картинам на
+            революционные сюжеты, портретам украинских крестьян.
+          </p>
+        </div>
+        <!-- 20 -->
+        <div class="flex flex-col gap-4">
+                    <!-- Ниже див с каруселью -->
+                    <div
+                    id="controls-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img
+                          src="./img/picters/Василий Поленов1.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <!-- Item 2 -->
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="./img/wanderers/20.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-6 h-6 text-white dark:text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+          <h1 class="text-xl">Василий Поленов</h1>
+          <p class="text-justify text-gray-500 dark:text-gray-400">
+            Василий Поленов увлекался живописью с детства. Он окончил Академию
+            художеств с Большой золотой медалью, путешествовал по Европе, изучая
+            разные школы и стили живописи и посещая множество музеев и картинных
+            галерей. Художник долго искал свое направление — и уже в зрелом
+            возрасте обрел известность как пейзажист и мастер жанровой живописи.
+            Благодаря картине «Московский дворик» Поленов стал родоначальником
+            «интимной живописи», а его картину «Христос и грешница» приобрел для
+            своей коллекции император Александр III.
+          </p>
+        </div>
+      </section>
+
+<!-- <a href="wanderers.html" class="yakar" id="scrollTop"><img width="50" src="/img/wanderers/strela.png"></a> -->
+
+
+<div class="isShowBtn isShowBtn_hide"><img width="50" src="img/wanderers/strela.png"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
